@@ -1,0 +1,377 @@
+//Colours
+$backgroundBlue: #eae8f4;
+$Highlights: #ee4271;
+$DarkTextColor: #422b68;
+$ExpColorOverley: #8da4c4;
+$BackgroundColour: rgb(170,237,235);
+//End_of_Colors
+
+//MediaQueries 
+$navColor:#ee4271;
+$MobileScreen: 320px;
+$TabletScreen: 600px;
+$TenInch: 1024;
+$ThirteenInch: 1280;
+$FifthteenInch: 1366px;
+$NineteenInch: 1440px;
+$TwentyFourInch: 1920px;
+
+//Global Classes and Properties. 
+*{ 
+box-sizing: border-box;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{ 
+    background-color: $backgroundBlue;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: HKNova-Medium;
+  
+}
+
+@media screen and (max-width: 600px) {
+/************************************************************
+Index Page!
+*************************************************************/
+    html{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        body{ 
+            background-color: $backgroundBlue;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            font-family: HKNova-Medium;
+        }    
+    }
+    .WebsiteDesciption{
+        transform: translateY(-35rem);
+        color: white;
+        text-align: center;
+        p{
+            font-size: 10px;
+        }
+    }
+    .ServicesButton{
+        z-index: 3;
+        border-width: 2px;
+        width: 10rem;
+        height: 2.5rem;
+        color: white;
+        background: none;
+    }
+    .BarStyle{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .stylebarone{
+            width: 50%;
+            height:4px;
+            background-color: $DarkTextColor;
+        }
+        .stylebartwo{
+            width: 50%;
+            height:4px;
+            background-color: $Highlights;
+        }
+    
+    }
+}
+
+/************************************************************
+Index Page End!
+*************************************************************/
+
+
+
+
+/************************************************************
+Header for larger screens done here!
+*************************************************************/
+
+/*
+    @media screen and (min-width:$TabletScreen) and (max-width: $NineteenInch ){
+    header{ 
+        
+        height: 100vh;
+        width: 100vw;
+        z-index: 3; 
+            }
+        
+    
+
+.header_content{
+    width: 38%;
+    z-index: 3;
+    margin-top:8.5rem;
+    padding-left: 4rem;
+
+    hr{ 
+        width:10rem;
+        transform:translateX(-11.7rem);
+    }
+
+
+#heading{
+    margin: 0;
+    color: white;
+    font-size: 70px;
+    //padding-left: 4.5rem;
+    text-align: left;
+    flex: 1;
+    font-weight: 1;
+}
+#p_heading{
+    text-align: center;
+    color: white;
+
+}
+}
+
+.PbuttonContainer{
+    display: flex;
+    justify-content: left;
+    padding-left: 4.7rem;
+    transform: translateY(-1rem);
+    .Portfolio{
+        font-size: 16px;
+        color: white;
+        width: 150px;
+        height: 30px;
+        background: rgba($navColor, 1.0);
+        border-radius: 3rem;
+        border-style: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+/***************************************
+ Innovative Page 
+ ***************************************/
+.gallery_Container{
+       
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding:20px;
+
+    .images_Gallery{
+            float: right;
+            flex: 1;
+            width: 25%;
+            height: 20rem;
+    
+        
+    }
+
+}
+.gallery_Container{
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap:10px;
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;  
+}
+.gallery{
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+   // grid-gap:10px;
+    display: grid;
+    max-width:100%;
+    margin: 0 auto;  
+}
+
+.backgroundColorContrastTwo{
+    background: rgba(grey, 0.4);
+    height: 35rem;
+    flex: 1;
+}
+.backgroundColorContrast{
+    background-color: $backgroundBlue;
+    height: 35rem;
+    flex: 1;
+}
+.containLayout{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/************************************************************
+Services Page!
+*************************************************************/
+
+.Headercontent{
+    width: 100%;
+        height: 50vh;
+        background: url(Images/ServicesImage.jpg) no-repeat;
+        background-size: cover;
+        h1{
+            text-align: center;
+            //padding-top: 3rem;
+            color: white;
+        }
+        
+}
+
+
+/******************************************
+ Color Bar Design 
+ ******************************************/
+.styleContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .stylebarone{
+        width: 50%;
+        height:4px;
+        background-color: $DarkTextColor;
+    }
+    .stylebartwo{
+        width: 50%;
+        height:4px;
+        background-color: $Highlights;
+    }
+
+}
+/***************************************
+ Bar Design End 
+ ***************************************/
+
+.tst{
+    color: white;
+
+}
+
+.servicesContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom:20px;
+
+    .GraphicDesign{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; 
+        width: calc(100vw/3);
+        height: 400px;
+       // background-color: #ee4271;
+        flex: 1;
+        .GraphicDesignContent{
+            h1{
+                font-size: 20px;
+            }
+            p{  color: #525252;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
+    
+    }
+    .WebandMobileApplicaitonDev{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; 
+        width: calc(100vw/3);
+        height: 400px;
+     //    background-color: #0f89cfa4;
+        flex: 1;
+        .ResponsiveDesignContent{
+            h1{
+                font-size: 20px;
+            }
+            p{  color: #525252;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
+    }
+    .Mobileapplications{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; 
+        width: calc(100vw/3);
+        height: 400px;
+      //  background-color: #42eeac;
+        flex: 1;
+        .MobileAppContent{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                color: #525252;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
+     
+    }
+
+}
+.Gfximg{
+    padding-top: 4rem;
+    width: 200px;
+    height: 200px;
+
+  }
+  .Clients{
+      width: 100%;
+      height: 400px;
+      background: rgba(grey, 0.2);
+.clientsHeading{ 
+    h1{
+        font-size: 20px;
+    }
+}
+      h1{
+          
+          text-align: center;
+          padding-top: 3rem;
+          //color:#525252;
+      }
+  }
+  .ClientsLogos{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    .logoClient{
+       img{
+        padding:10px;
+        width: 160px;
+        height: 100px;
+       }
+    }
+  }
+  #ntaa{
+    width:100px;
+}
+.footer{
+    width: 100%;
+    height: 3rem;
+    background-color: $DarkTextColor;
+    .footerContent{
+        color:white;
+        font-size: 10px;
+        text-align: center;
+        padding-top: 1rem;
+    }
+}
+/************************************************************
+End Of Services Page!
+*************************************************************/
+
