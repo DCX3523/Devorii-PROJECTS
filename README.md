@@ -1,2 +1,2 @@
-# School
-This is going to use for my school Projects. Don't steal my codes thanks.
+# Devorii.com
+We're always open to suggestions and here to help
